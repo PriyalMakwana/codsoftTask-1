@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/5492086357.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>P</span>riyal</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()" id="menu"></i>
+            </nav>
+            <div class="header-text">
+                <p>FullStack Developer</p>
+                <h1>Hi, I'm <span>Priyal<br> Makwana</span><br> From Mandsaur</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------------------About--------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                   <img src="images/pic3.jpg" height="550" > 
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Recent graduate with a strong background in React.js,Node js, and web design. I'm excited to start my career in software development, applying what I've learned in a dynamic work environment.
+                        I know MERN Stack well, and I understand C++ and web design. I'm always eager to learn and stay updated with the latest trends. I'm particularly interested in making websites look good and work smoothly.                   
+                        I'm looking for a job where I can use my coding skills to work on interesting projects. I want to keep learning and be part of a friendly team. I'm ready to bring my energy and dedication to make a positive impact.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                             <h3>Tech-Skills</h3>
+                            <ul>
+                                <li><span>Frontend</span><br>HTML, CSS, Javascript / Web-Development</li>
+                                <li><span>Backend</span><br>Node js, Mongodb, SQL /Web-Development</li>
+                                <li><span>Frameworks</span><br>React js, Express js ,Bootstrap /Web-Development</li>
+                                <li><span>FullStack</span><br>MERN Stack(Mongo db, Express js, React js, Node js) /Web-Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <h3>Internships</h3>
+                            <ul>
+                                <li><span>February(2024)</span><br>Web-Development(HTML, CSS, Javascript) From Codsoft</li>
+                                <li><span>January(2024)</span><br>Word-Press From Great-Learning App</li>
+                                <li><span>August-December(2023)</span><br>FullStack web development in Mern Stack From Universal Informatics, Indore</li>
+                                <li><span>March-July(2023)</span><br>Web-Development(Frontend development) From IndVibe Tech,Indore</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <h3>Qualifications</h3>
+                            <ul>
+                                <li><span>2020-2023</span><br>BSC Computer Science From Rajiv Ghandhi PG College,Mandsaur<br>70.90%</li>
+                                <li><span>2019-2020</span><br>Class 12 From Jawahar Navodaya Vidhyalaya,Mandsaur<br>87.40%</li>
+                                <li><span>2017-2018</span><br>Class 10 From Jawahar Navodaya Vidhyalaya,Mandsaur<br>89.40%</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------Projects---------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/music.jpg" alt="img1">
+                    <div class="layer">
+                        <h3>Music-App</h3>
+                        <p>Developed a responsive frontend Music-App using HTML, CSS,Javascript. in which a user can hear and enjoy some songs.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/blood.jpeg" alt="img1">
+                    <div class="layer">
+                        <h3>Blood-Bank-App</h3>
+                        <p>Developed a responsive Fullstack Blood-Bank-App using Mongodb, React js, Node js, Express js, Bootstrap, Redux Toolkit</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/chat.png" alt="img1">
+                    <div class="layer">
+                        <h3>Chat-App</h3>
+                        <p>Developed a responsive Real-Time Chat-App using HTML, CSS, Javascript, socket io, node js in which users can interact with eachother.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/todo.jpg" alt="img1">
+                    <div class="layer">
+                        <h3>ToDo-list</h3>
+                        <p>Developed a responsive Full-Stack TODO-List App using MERN Stack .in which user can save,delete,add their daily todos</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ecart.jpeg" alt="img1">
+                    <div class="layer">
+                        <h3>E-Commerce</h3>
+                        <p>Developed a responsive frontend E-Commerce website using React js and bootstrap in which user can do shopping electonic items.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Restaurant.png" alt="img1">
+                    <div class="layer">
+                        <h3>Restaurant Website</h3>
+                        <p>Developed a responsive frontend Restaurant website using React js and Material UI in which user can Order Food for them .</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    
+    <!--------------------------Contact------------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="mid">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>I'm trying to manage myself.not just my portfolio</p>
+            </div>
+            <div class="social-icon">
+             <a href="https://mail.google.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/PriyalMakwana"><i class="fa-brands fa-github"></i></a>
+            <a href="https://in.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+           </div>
+           <div class="btn2">
+            <a href="images/resume_priyal.pdf" class="button">View My Resume  <i class="fa-solid fa-download"></i></a>
+           </div>  
+        </div>
+        <div class="copyright">
+            <p>Copyright © Priyal Makwana. Made with  <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+   
+    <script>
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-130px";
+        }
+    </script>
+</body>
+</html>
